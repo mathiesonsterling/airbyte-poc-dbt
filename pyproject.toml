@@ -5,7 +5,7 @@ description = ""
 authors = ["Mathieson Sterling <msterling@nuvalence.io>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.7"
 dbt-bigquery = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
