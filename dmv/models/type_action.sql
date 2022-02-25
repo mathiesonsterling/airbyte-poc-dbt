@@ -8,7 +8,7 @@ SELECT
     CAST(license_amendment_id as INT) as license_amendment_id,
     CAST(license_reciprocity_id as INT) as license_reciprocity_id,
     CAST(id_upgrade_id as INT) as id_upgrade_id,
-    _airbyte_emitted_at as ingested_at,
+    _airbyte_emitted_at as ingested_at_badly,
     action_details,
     office,
     created_at
