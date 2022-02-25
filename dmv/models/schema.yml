@@ -11,9 +11,7 @@ models:
     columns:
       - name: invoice_id
         tests:
-          - unique
           - not_null
       - name: sales_tax_id
         tests:
-          - unique
           - not_null
