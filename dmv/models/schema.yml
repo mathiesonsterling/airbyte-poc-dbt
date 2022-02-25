@@ -7,3 +7,13 @@ models:
         tests:
           - unique
           - not_null
+  - name: sq_report_sto_invoice_approved_mvr
+    columns:
+      - name: invoice_id
+        tests:
+          - unique
+          - not_null
+      - name: sales_tax_id
+        tests:
+          - unique
+          - not_null
