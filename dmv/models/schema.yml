@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: transform_action
+  - name: v_transform_action
     columns:
       - name: id
         tests:
