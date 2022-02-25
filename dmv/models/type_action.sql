@@ -12,4 +12,4 @@ SELECT
     action_details,
     office,
     created_at
-FROM `playground-m-sterling`.airbyte.action
+FROM `playground-m-sterling`.ds_transform.action

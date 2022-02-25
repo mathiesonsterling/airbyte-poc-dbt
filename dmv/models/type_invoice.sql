@@ -18,4 +18,4 @@ SELECT
     CAST(non_driver_id_id AS INT) AS non_driver_id_id,
     CAST(license_amendment_id AS INT) AS license_amendment_id,	
     CAST(license_reciprocity_id	AS INT) AS license_reciprocity_id	
-FROM `playground-m-sterling`.airbyte.invoice
+FROM `playground-m-sterling`.ds_transform.invoice

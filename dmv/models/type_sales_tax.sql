@@ -32,4 +32,4 @@ _airbyte_ab_id,
 _airbyte_emitted_at as ingested_at,	
 _airbyte_normalized_at,	
 _airbyte_sales_tax_hashid,	
-FROM `playground-m-sterling`.airbyte.sales_tax
+FROM `playground-m-sterling`.ds_transform.sales_tax

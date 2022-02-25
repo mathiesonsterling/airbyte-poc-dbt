@@ -2,4 +2,4 @@ SELECT
     CAST(id as INT) as id,
     _airbyte_emitted_at as ingested_at,
     * except (id)
-FROM `playground-m-sterling`.airbyte.user
+FROM `playground-m-sterling`.ds_transform.user
