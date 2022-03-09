@@ -1,0 +1,6 @@
+
+.idea/
+
+dbt_transforms/.venv/
+dbt_transforms/target/
+
