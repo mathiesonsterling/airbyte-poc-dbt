@@ -135,15 +135,11 @@ models:
         tests:
           - not_null
           - unique
-          - row_count:
-              above: 455
   - name: t_dev_report_invoice_cash
     columns:
       - name: amount
         tests:
           - not_null
-          - row_count:
-              above: 42
       - name: invoice_status
         tests:
           - not_null
@@ -154,8 +150,6 @@ models:
       - name: invoice_id
         tests:
           - not_null
-          - row_count:
-              above: 364
       - name: invoice_status
         tests:
           - not_null
@@ -178,8 +172,6 @@ models:
       - name: invoice_id
         tests:
           - not_null
-          - row_count:
-              above: 129
       - name: invoice_status
         tests:
           - not_null
@@ -190,8 +182,6 @@ models:
       - name: invoice_id
         tests:
           - not_null
-          - row_count:
-              above: 129
       - name: invoice_status
         tests:
           - not_null
@@ -203,8 +193,6 @@ models:
         tests:
           - not_null
           - unique
-          - row_count:
-              above: 107
   - name: t_dev_report_license_reciprocity
     columns:
       - name: id
@@ -244,9 +232,6 @@ models:
   - name: t_dev_report_mvr_sessions_office
     columns:
       - name: user_office
-        tests:
-          - row_count:
-              above: 389
   - name: t_dev_report_non_driver_id
     columns:
       - name: id
@@ -258,9 +243,6 @@ models:
   - name: t_dev_report_op_or_info_req_avg
     columns:
       - name: permit_approved_date
-        tests:
-          - row_count:
-              above: 52
   - name: t_dev_report_op_status_avg_time_days
     columns:
       - name: approved_date
