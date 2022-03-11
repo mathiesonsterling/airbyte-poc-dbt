@@ -17,15 +17,13 @@ models:
           - unique
           - not_null
           - row_count:
-              above: 172
+              above: 171
   - name: v_transform_registration
     columns:
       - name: id
         tests:
           - unique
           - not_null
-          - row_count:
-              above: 412
   - name: v_transform_invoice
     columns: 
       - name: id
@@ -131,8 +129,6 @@ models:
       - name: transaction_id
         tests:
           - not_null
-          - row_count:
-              above: 139
   - name: t_dev_report_invoice
     columns:
       - name: id
@@ -151,6 +147,8 @@ models:
       - name: invoice_status
         tests:
           - not_null
+          - accepted_values:
+              values: ['Sent', 'Paid']
   - name: t_dev_report_invoice_registration
     columns:
       - name: invoice_id
@@ -161,6 +159,8 @@ models:
       - name: invoice_status
         tests:
           - not_null
+          - accepted_values:
+              values: ['Sent', 'Paid']
   - name: t_dev_report_invoice_registration_user
     columns:
       - name: invoice_id
@@ -171,6 +171,8 @@ models:
       - name: invoice_status
         tests:
           - not_null
+          - accepted_values:
+              values: ['Sent', 'Paid']
   - name: t_dev_report_invoice_registration_user_fulfilled_action
     columns:
       - name: invoice_id
@@ -181,6 +183,8 @@ models:
       - name: invoice_status
         tests:
           - not_null
+          - accepted_values:
+              values: ['Sent', 'Paid']
   - name: t_dev_report_invoice_sales_tax_user_fulfilled_action
     columns:
       - name: invoice_id
@@ -191,6 +195,8 @@ models:
       - name: invoice_status
         tests:
           - not_null
+          - accepted_values:
+              values: ['Sent', 'Paid']
   - name: t_dev_report_license_amendment
     columns:
       - name: id
@@ -295,8 +301,6 @@ models:
       - name: transaction_id
         tests:
           - not_null
-          - row_count:
-              above: 116
   - name: t_dev_report_permit_county_view
     columns:
       - name: transaction_id
@@ -329,9 +333,6 @@ models:
   - name: t_dev_report_permit_ip_address_event_count_pivot
     columns:
       - name: ip_address
-        tests:
-          - row_count:
-              above: 12
   - name: t_dev_report_permit_ip_test_status_summary
     columns:
       - name: ip_address
@@ -366,7 +367,7 @@ models:
           - not_null
           - unique
           - row_count:
-              above: 446
+              above: 406
   - name: t_dev_report_registration_actions
     columns:
       - name: action_id
