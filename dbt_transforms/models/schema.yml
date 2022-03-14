@@ -405,6 +405,7 @@ models:
               above: 29
 sources:
   - name: ds_airbyte
+    schema: ds_ingest
     tables:
       - name: t_ingest_action
         columns:
