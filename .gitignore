@@ -4,3 +4,7 @@
 dbt_transforms/.venv/
 dbt_transforms/target/
 
+
+dbt_transforms/logs/dbt.log
+
+*.legacy
