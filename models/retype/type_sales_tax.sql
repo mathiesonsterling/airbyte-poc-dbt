@@ -29,7 +29,7 @@ transaction_id,
 rejection_reason,	
 unread_psb_messages,	
 _airbyte_ab_id,	
-_airbyte_emitted_at as ingested_at,	
+ingested_at,
 _airbyte_normalized_at,	
 _airbyte_t_ingest_sales_tax_hashid,
 FROM {{ source('ds_airbyte', 't_ingest_sales_tax') }}

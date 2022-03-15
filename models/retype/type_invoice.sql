@@ -7,7 +7,7 @@ SELECT
     initials,	
     CAST(permit_id AS INT) AS permit_id,	
     CAST(created_at AS TIMESTAMP) as created_at,
-    _airbyte_emitted_at as ingested_at,
+    ingested_at,
     CAST(updated_at as TIMESTAMP) as updated_at,
     payment_type,	
     CAST(sales_tax_id AS INT) AS sales_tax_id,	
